@@ -34,7 +34,8 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Change Snake Color Button**: Cycle through different snake colors.
 - **Change Food Color Button**: Cycle through different food colors.
 - **Run Snake Demo Button**: Start an automated snake demonstration.
-- **Demo Speed Control**: Adjust the speed of the automated demo. ⚠️ **CAUTION**: Do not set the speed below 30 as it may cause Blue Screen of Death (BSOD) on Windows systems.
+- **Demo Speed Control**: Adjust the speed of the automated demo.
+- **⚠️ **CAUTION**: Do not set the speed below 30 as it may cause Blue Screen of Death (BSOD) on Windows systems.
 
 ## High Scores
 
