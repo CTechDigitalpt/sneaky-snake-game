@@ -1,8 +1,8 @@
-# sneaky-snake-game
+# Free Sneaky Snake Game
 
-# Sneaky - Free Snake Game
+Welcome to **Sneaky Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
 
-Welcome to **Sneakey Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
+The game is called "Sneaky Snake" because of the snake's ability to slip through walls and appear on the opposite side – a sneaky maneuver that adds a strategic element to the classic gameplay. Unlike traditional snake games where walls mean instant death, our sneaky serpent can navigate the playing field with cunning movements that reward tactical thinking.
 
 ## Features
 
@@ -50,7 +50,7 @@ The game automatically saves your top 10 highest scores locally in your browser.
    ```
 2. Navigate to the project directory:
    ```bash
-   cd sneakey-free-snake-game
+   cd snakey-free-snake-game
    ```
 3. Open `index.html` in your browser to start playing.
 
