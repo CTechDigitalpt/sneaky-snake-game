@@ -40,7 +40,7 @@ Welcome to **Sneakey Snake**, a modern take on the classic Snake game! This proj
 
 The game automatically saves your top 10 highest scores locally in your browser. These scores are displayed in the high scores panel, allowing you to track your progress and challenge yourself to beat your personal best.
 
-** Scores are saved in your web browser's cache. If you wish to start fresh and reset all high scores, simply clear your browser cache for this site. **
+** Scores are saved in your web browser's cache. This eliminates the need for server-side storage, allowing the game to function completely offline and without requiring any backend infrastructure. If you wish to start fresh and reset all high scores, simply clear your browser cache for this site. **
 
 ## Installation
 
