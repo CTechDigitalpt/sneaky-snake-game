@@ -67,6 +67,8 @@ If you enjoy this game and would like to support its continued development, plea
 
 [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=FBG94CBRX3T5N)
 
+[Donate via Patreon](https://www.patreon.com/ctechdigital)
+
 Your support helps maintain and improve this project and others. Thank you!
 
 ## License
