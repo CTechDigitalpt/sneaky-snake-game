@@ -1,4 +1,4 @@
-# Free Sneaky Snake Game
+**# Free Sneaky Snake Game
 
 Welcome to **Sneaky Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
 
@@ -34,7 +34,7 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Change Snake Color Button**: Cycle through different snake colors.
 - **Change Food Color Button**: Cycle through different food colors.
 - **Run Snake Demo Button**: Start an automated snake demonstration.
-- **Demo Speed Control**: Adjust the speed of the automated demo.
+- **Demo Speed Control**: Adjust the speed of the automated demo. ⚠️ **CAUTION**: Do not set the speed below 30 as it may cause Blue Screen of Death (BSOD) on Windows systems.
 
 ## High Scores
 
@@ -68,3 +68,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - Inspired by the classic Snake game I used to play for hours on the old faithful Nokia 3310 phone.
 - Built with vanilla HTML, CSS, and JavaScript.
+**
