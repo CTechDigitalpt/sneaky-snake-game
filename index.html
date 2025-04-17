@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="assets/images/icon/favicon.png" type="image/png">
+</head>
+<body>
+    <section id="main-section">
+        <div id="high-scores-container">
+            <h2>Top 10 High Scores</h2>
+            <ol id="high-scores-list"></ol>
+        </div>
+        <div id="game-container">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div id="button-container">
+            <button id="new-game-btn" onclick="location.reload()">New Game</button>
+            <button id="toggle-bg-btn" onclick="toggleBackground()">Toggle Background</button>
+            <button id="pause-btn" onclick="togglePause()">Pause/Resume Game</button>
+            <button id="snake-color-btn" onclick="changeSnakeColor()">Change Snake Color</button>
+            <button id="food-color-btn" onclick="changeFoodColor()">Change Food Color</button>
+            <button id="demo-btn" onclick="startDemo()">Run Snake Demo</button>
+            <div id="demo-speed-container" style="display: none;">
+                <label for="demo-speed">Demo Speed:</label>
+                <input id="demo-speed" type="number" value="100" min="30" max="300" step="50" onchange="updateDemoSpeed()">
+            </div>
+        </div>
+    </section>
+
+    <div id="score-container">
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+    </div>
+
+    <div id="demo-popup">
+        <img src="assets/images/demo/demo-image.webp" alt="Snake Demo">
+        <button onclick="restartDemo()">Run Demo Again</button>
+        <button onclick="closeDemoPopup()">Play Game</button>
+    </div>
+
+    <footer id="footer">
+        <img src="assets/images/logo/ctechdigital.png" alt="CTechDigital.com" class="footer-logo">
+        <p>Created by <a href="https://www.ctechdigital.com" target="_blank">CTech Digital.com</a> | 
+        <a href="https://github.com/yourusername" target="_blank" class="social-link">
+            <img src="assets/images/social/github.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+            <img src="assets/images/social/twitter.png" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://tiktok.com/@yourusername" target="_blank" class="social-link">
+            <img src="assets/images/social/tiktok.png" alt="TikTok" class="social-icon">
+        </a>
+        | A fun implementation of the classic Snake game</p>
+    </footer>
+
+    <script src="static/js/snakegame.js"></script>
+    <script src="static/js/snake-demo.js"></script>
+    <script src="static/js/high-scores.js"></script>
+</body>
+</html>
