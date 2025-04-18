@@ -15,9 +15,10 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Pause Functionality**: Pause and resume gameplay anytime.
 - **Dark Mode**: Toggle between light and dark themes for a personalized experience.
 - **Responsive Design**: Play the game on various devices with a responsive layout.
-- 
+
 ## Possible Add-on Feature Ideas
 
+- **Auto Pilot Sneaky Snake Mode**: Reach Milestone Scores to activate Auto-Pilot Sneaky Snake.
 - **Time Lapse Between Levels**: Implementation of a countdown timer between levels would create anticipation and challenge. Players could use this brief pause to mentally prepare for the next level, while also building excitement for breaking personal records.
 - **Incremental Speed Increase**: Progressive difficulty system that automatically increases snake movement speed at predetermined level thresholds. This creates a natural difficulty curve where higher levels require faster reflexes and more strategic planning.
 - **Persistent Score Database**: Implementation of either a server-side database or localStorage solution to permanently store player scores and statistics. Unlike the current browser cache method (which gets erased when clearing browser data), this would preserve gaming history and achievements long-term.
