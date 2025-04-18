@@ -1,4 +1,4 @@
-# Free Sneaky Snake Game
+# Sneaky Snake Game
 
 Welcome to **Sneaky Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
 
