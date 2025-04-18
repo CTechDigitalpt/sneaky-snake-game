@@ -2,9 +2,9 @@
 
 Welcome to **Sneaky Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
 
-The game is called "Sneaky Snake" because of the snake's ability to slip through walls and appear on the opposite side – a sneaky maneuver that adds a strategic element to the classic gameplay. Unlike traditional snake games where walls mean instant death, our sneaky serpent can navigate the playing field with cunning movements that reward tactical thinking.
+The game is called "Sneaky Snake" because of the snake's ability to slip through walls and appear on the opposite side – a sneaky maneuver that adds a strategic element to the classic gameplay. Unlike traditional snake games where walls mean instant death, this sneaky serpent can navigate the playing field with cunning movements that reward tactical thinking. I was intending on adding other features to make it a bit more exciting but we'll see if popularity and or any donations come my way to justify spending the time on adding more features to sneaky snake.
 
-## Features
+## Current Features
 
 - **Classic Gameplay**: Navigate the snake to eat food and grow longer while avoiding collisions.
 - **Customizable Colors**: Change the snake and food colors with a simple button click.
@@ -15,7 +15,14 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Pause Functionality**: Pause and resume gameplay anytime.
 - **Dark Mode**: Toggle between light and dark themes for a personalized experience.
 - **Responsive Design**: Play the game on various devices with a responsive layout.
+- 
+## Possible Future Features
 
+- **Time lapse between levels**: Setting records is one thing but breaking your own record is another. This feature may be worthwhile pursuing to add a bit more excitemnt.
+- **Server-side or local Database Score Capture**: Might be nice to have a peristant database to keep scores over time as currently it uses web browser cache for Score memory.
+- **Add User Defined Styling to Webpage**: Might be nice to add some on-screen settings to customize webpage styling layout.
+
+  
 ## How to Play
 
 1. Use the arrow keys to control the snake's direction.
