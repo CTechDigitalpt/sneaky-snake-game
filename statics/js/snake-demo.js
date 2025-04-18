@@ -14,44 +14,36 @@ function runSnakeDemo() {
 
         const head = { ...snake[0] };
 
-        // Calculate distances considering screen wrapping
-        const directXDistance = Math.abs(head.x - food.x);
-        const wrappedXDistance = canvas.width - directXDistance;
-        const directYDistance = Math.abs(head.y - food.y);
-        const wrappedYDistance = canvas.height - directYDistance;
+        // Calculate shortest distances considering wrapping
+        const xDistance = (head.x - food.x + canvas.width) % canvas.width;
+        const yDistance = (head.y - food.y + canvas.height) % canvas.height;
+
+        const shortestXDistance = xDistance <= canvas.width / 2 ? xDistance : xDistance - canvas.width;
+        const shortestYDistance = yDistance <= canvas.height / 2 ? yDistance : yDistance - canvas.height;
 
         // Determine X direction (left or right)
-        let xDirection;
-        if (directXDistance <= wrappedXDistance) {
-            // Direct path is shorter or equal
-            xDirection = head.x < food.x ? 'right' : (head.x > food.x ? 'left' : null);
-        } else {
-            // Wrapped path is shorter
-            xDirection = head.x < food.x ? 'left' : 'right';
+        let xDirection = null;
+        if (shortestXDistance < 0) {
+            xDirection = 'right';
+        } else if (shortestXDistance > 0) {
+            xDirection = 'left';
         }
 
         // Determine Y direction (up or down)
-        let yDirection;
-        if (directYDistance <= wrappedYDistance) {
-            // Direct path is shorter or equal
-            yDirection = head.y < food.y ? 'down' : (head.y > food.y ? 'up' : null);
-        } else {
-            // Wrapped path is shorter
-            yDirection = head.y < food.y ? 'up' : 'down';
+        let yDirection = null;
+        if (shortestYDistance < 0) {
+            yDirection = 'down';
+        } else if (shortestYDistance > 0) {
+            yDirection = 'up';
         }
 
         // Decide whether to move horizontally or vertically
-        // Prioritize movement with greater distance to cover
         if (xDirection === null) {
             direction = yDirection;
         } else if (yDirection === null) {
             direction = xDirection;
         } else {
-            // Choose the axis with greater distance to cover (adjusted for wrapping)
-            const effectiveXDistance = Math.min(directXDistance, wrappedXDistance);
-            const effectiveYDistance = Math.min(directYDistance, wrappedYDistance);
-            
-            direction = effectiveXDistance > effectiveYDistance ? xDirection : yDirection;
+            direction = Math.abs(shortestXDistance) > Math.abs(shortestYDistance) ? xDirection : yDirection;
         }
 
         // Move the snake in the chosen direction
@@ -83,7 +75,6 @@ function runSnakeDemo() {
     }, demoSpeed);
 }
 
-// Also need to update this function to use the new logic
 function updateDemoSpeed() {
     const speedInput = document.getElementById('demo-speed');
     demoSpeed = parseInt(speedInput.value, 10);
