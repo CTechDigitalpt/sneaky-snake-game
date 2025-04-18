@@ -1,4 +1,4 @@
-# Sneaky Snake Game
+# Free Sneaky Snake Game
 
 Welcome to **Sneaky Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
 
@@ -15,10 +15,10 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Pause Functionality**: Pause and resume gameplay anytime.
 - **Dark Mode**: Toggle between light and dark themes for a personalized experience.
 - **Responsive Design**: Play the game on various devices with a responsive layout.
+- **Auto Pilot Mode**: Reach Milestone Scores to activate Auto-Pilot Snake.
 
 ## Possible Add-on Feature Ideas
 
-- **Auto Pilot Sneaky Snake Mode**: Reach Milestone Scores to activate Auto-Pilot Sneaky Snake.
 - **Time Lapse Between Levels**: Implementation of a countdown timer between levels would create anticipation and challenge. Players could use this brief pause to mentally prepare for the next level, while also building excitement for breaking personal records.
 - **Incremental Speed Increase**: Progressive difficulty system that automatically increases snake movement speed at predetermined level thresholds. This creates a natural difficulty curve where higher levels require faster reflexes and more strategic planning.
 - **Persistent Score Database**: Implementation of either a server-side database or localStorage solution to permanently store player scores and statistics. Unlike the current browser cache method (which gets erased when clearing browser data), this would preserve gaming history and achievements long-term.
@@ -30,14 +30,14 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Sound Effects and Music**: Add audio elements with volume control to enhance immersion.
 - **Achievement Rewards**: Implement challenges and rewards for completing specific goals.
 
-![Sneaky Snake Game Screenshot](assets/images/snakey-snake-game-screenshot.png "Sneaky Snake Game")
+![Sneaky Snake Game Screenshot](assets/images/sneaky-snake-game-screenshot.png "Sneaky Snake Game")
 
 ## How to Play
 
 1. Use the arrow keys to control the snake's direction.
 2. Eat the food (small squares) to grow longer and increase your score by 10 points.
 3. Avoid colliding with the snake's own body.
-4. Pass through walls to appear on the opposite side of the screen a Sneaky Snake attack on your prey.
+4. Pass through walls to appear on the opposite side of the screen a sneaky snake attack on your prey.
 5. Every 100 points, you'll advance to the next level.
 6. Game ends when the snake collides with itself.
 
@@ -84,6 +84,9 @@ If you enjoy this game and would like to support its continued development, plea
 [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=FBG94CBRX3T5N)
 
 [Donate via Patreon](https://www.patreon.com/ctechdigital)
+
+[Donate via Ko-Fi](https://ko-fi.com/ctechdigitalcom)
+
 
 Your support helps maintain and improve this project and others. Thank you!
 
