@@ -36,7 +36,7 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 1. Use the arrow keys to control the snake's direction.
 2. Eat the food (small squares) to grow longer and increase your score by 10 points.
 3. Avoid colliding with the snake's own body.
-4. Pass through walls to appear on the opposite side of the screen.
+4. Pass through walls to appear on the opposite side of the screen a Sneaky Snake attack on your prey.
 5. Every 100 points, you'll advance to the next level.
 6. Game ends when the snake collides with itself.
 
