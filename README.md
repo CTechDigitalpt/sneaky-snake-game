@@ -29,6 +29,8 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Sound Effects and Music**: Add audio elements with volume control to enhance immersion.
 - **Achievement Rewards**: Implement challenges and rewards for completing specific goals.
 
+![Sneaky Snake Game Screenshot](assets/images/snakey-snake-game-screenshot.png "Sneaky Snake Game")
+
 ## How to Play
 
 1. Use the arrow keys to control the snake's direction.
