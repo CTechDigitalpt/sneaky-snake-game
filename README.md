@@ -18,10 +18,10 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - 
 ## Possible Add-on Feature Ideas
 
-- **Time lapse between levels**: Setting records is one thing but breaking your own record is another. This feature may be worthwhile pursuing to add a bit more excitemnt.
-- **Incremental Speed Increase**: Add logic to increase snake speed when reaching certain level.
-- **Server-side or local Database Score Capture**: Add a peristant database to keep scores as it currently uses web browser cache for Score memory, so if you clear full system cache its all gone.
-- **Add User Defined Styling to Webpage**: Add on-screen settings to customize webpage styling layout.
+- **Time Lapse Between Levels**: Implementation of a countdown timer between levels would create anticipation and challenge. Players could use this brief pause to mentally prepare for the next level, while also building excitement for breaking personal records.
+- **Incremental Speed Increase**: Progressive difficulty system that automatically increases snake movement speed at predetermined level thresholds. This creates a natural difficulty curve where higher levels require faster reflexes and more strategic planning.
+- **Persistent Score Database**: Implementation of either a server-side database or localStorage solution to permanently store player scores and statistics. Unlike the current browser cache method (which gets erased when clearing browser data), this would preserve gaming history and achievements long-term.
+- **Customizable UI Settings**: Advanced settings panel allowing players to personalize visual aspects of the game including grid size, background patterns, animation effects, and UI element positioning to match their preferences and optimize their gaming experience.
 - **Power-ups**: Special items that appear randomly and provide temporary abilities like speed boost, invincibility, or score multipliers.
 - **Obstacles**: Random obstacles that appear in the game area, adding an extra challenge to navigation.
 - **Custom Level Creation**: Allow users to design and share their own levels.
