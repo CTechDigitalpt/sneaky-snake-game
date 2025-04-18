@@ -16,13 +16,19 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Dark Mode**: Toggle between light and dark themes for a personalized experience.
 - **Responsive Design**: Play the game on various devices with a responsive layout.
 - 
-## Possible Future Features
+## Possible Add-on Feature Ideas
 
 - **Time lapse between levels**: Setting records is one thing but breaking your own record is another. This feature may be worthwhile pursuing to add a bit more excitemnt.
-- **Server-side or local Database Score Capture**: Might be nice to have a peristant database to keep scores over time as currently it uses web browser cache for Score memory.
-- **Add User Defined Styling to Webpage**: Might be nice to add some on-screen settings to customize webpage styling layout.
+- **Incremental Speed Increase**: Add logic to increase snake speed when reaching certain level.
+- **Server-side or local Database Score Capture**: Add a peristant database to keep scores as it currently uses web browser cache for Score memory, so if you clear full system cache its all gone.
+- **Add User Defined Styling to Webpage**: Add on-screen settings to customize webpage styling layout.
+- **Power-ups**: Special items that appear randomly and provide temporary abilities like speed boost, invincibility, or score multipliers.
+- **Obstacles**: Random obstacles that appear in the game area, adding an extra challenge to navigation.
+- **Custom Level Creation**: Allow users to design and share their own levels.
+- **Mobile-Friendly Controls**: Add touch/swipe controls for mobile gameplay experience.
+- **Sound Effects and Music**: Add audio elements with volume control to enhance immersion.
+- **Achievement Rewards**: Implement challenges and rewards for completing specific goals.
 
-  
 ## How to Play
 
 1. Use the arrow keys to control the snake's direction.
