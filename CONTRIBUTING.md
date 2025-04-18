@@ -1,4 +1,4 @@
-# Contributing to Snakey Game
+# Contributing to Sneakey Snake Game
 
 Thank you for considering contributing to Sneaky Snake Game! This document provides guidelines and instructions for contributing to the project.
 
