@@ -51,7 +51,7 @@ The game automatically saves your top 10 highest scores locally in your browser.
    ```
 2. Navigate to the project directory:
    ```bash
-   cd snakey-free-snake-game
+   cd sneaky-snake-game
    ```
 3. Open `index.html` in your browser to start playing.
 
