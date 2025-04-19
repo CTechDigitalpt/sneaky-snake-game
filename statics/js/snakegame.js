@@ -10,8 +10,8 @@ let isAutoPilotActive = false;
 let autoPilotTimer = null;
 let countdownInterval = null;
 const autoPilotSpeed = 30;
-const autoPilotDuration = 3000; // 3 seconds
-const scoreMilestones = [50, 150, 300, 500, 750, 1000]; // Milestones to trigger auto-pilot
+const autoPilotDuration = 3000; 
+const scoreMilestones = [50, 150, 300, 500, 750, 1000, 1750, 2500, 3750, 5000]; // Milestones
 
 const gridSize = 10;
 const foodSize = 10;
@@ -24,7 +24,7 @@ if (!ctx) {
 } else {
     document.getElementById('game-container').appendChild(canvas);
 }
-
+// Might change this later to user specified size modifications in the webpage
 canvas.width = 400;
 canvas.height = 350;
 
@@ -167,22 +167,22 @@ function changeFoodColor() {
 function checkAutoPilotTrigger() {
     if (isAutoPilotActive || isPaused || isDemoRunning) return;
 
-    // Use a dynamic milestone check to avoid duplicate triggers
+    // Use a dynamic milestone check to avoid duplicated triggers
     const nextMilestone = scoreMilestones.find(milestone => milestone > score - 10 && milestone <= score);
     if (nextMilestone) {
         activateAutoPilot();
     }
 }
-
+// Got carried away might move this to its own JS file to tidy up 
 function autoPilotMoveSnake() {
-    // Check if auto-pilot should still be active
+    // Check if auto-pilot should be active
     if (!isAutoPilotActive) return;
 
     const head = { ...snake[0] };
-    let currentDirection = direction; // Store current direction
+    let currentDirection = direction; // Store current snake direction
     let preferredDirection = direction;
 
-    // Determine preferred direction towards food
+    // Determine preferred direction towards the food pos
     if (head.x < food.x && currentDirection !== 'left') {
         preferredDirection = 'right';
     } else if (head.x > food.x && currentDirection !== 'right') {
@@ -193,7 +193,7 @@ function autoPilotMoveSnake() {
         preferredDirection = 'up';
     }
 
-    // List potential directions, starting with preferred, then current, then others
+    // List potential directions, starting with preferred, then current, then other
     const potentialDirections = [preferredDirection];
     if (preferredDirection !== currentDirection) {
         potentialDirections.push(currentDirection);
@@ -218,12 +218,12 @@ function autoPilotMoveSnake() {
             case 'right': nextHead.x = (nextHead.x + gridSize) % canvas.width; break;
         }
 
-        // Check collision against snake body (excluding the tail tip if snake doesn't grow)
+        // Check collision against snake body (excluding the tail tip if snakey doesn't grow)
         let collisionCheckSegments = snake;
-        // Predict if the snake will grow this step
+        // Predict if the snake has grown
         const willGrow = (nextHead.x === food.x && nextHead.y === food.y);
         if (!willGrow && snake.length > 1) {
-             // Exclude the last segment which will be removed
+             // Exclude last segment which will be removed
             collisionCheckSegments = snake.slice(0, -1);
         }
 
@@ -237,15 +237,15 @@ function autoPilotMoveSnake() {
     }
 
     // If no safe direction is found, the snake will continue in its current direction and likely collide.
-    // This scenario should be rare with wall wrapping.
+    // This scenario is rare with wall wrapping but happens sometimes. Need to dev further
 
     // Perform the actual move using the determined direction
     moveSnake();
-    // Collision check is already inside moveSnake
+
 }
 
 function activateAutoPilot() {
-    if (isAutoPilotActive) return; // Don't activate if already active
+    if (isAutoPilotActive) return; // Don't activate AP if already active
 
     // Set state first to prevent race conditions
     isAutoPilotActive = true;
@@ -286,10 +286,10 @@ function activateAutoPilot() {
         }
     }, 1000);
 
-    // Start auto-pilot game loop with faster speed
+    // Start auto-pilot at a faster speed
     gameInterval = setInterval(() => {
         if (isAutoPilotActive) {
-            // Check if we've exceeded the duration
+            // Check if snakey ap exceeded the duration
             if (Date.now() - startTime >= autoPilotDuration) {
                 console.log("Game loop detecting auto-pilot timeout");
                 deactivateAutoPilot();
@@ -308,7 +308,7 @@ function activateAutoPilot() {
         if (isAutoPilotActive) {
             deactivateAutoPilot();
         }
-    }, autoPilotDuration + 500); // Add a small buffer
+    }, autoPilotDuration + 500); // Added small buffer
 }
 
 function deactivateAutoPilot() {
