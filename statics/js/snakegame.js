@@ -397,8 +397,8 @@ function gameOver() {
 }
 
 function toggleBackground() {
-    document.body.classList.toggle('dark-mode');
-    document.getElementById('game-container').classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+    document.getElementById('game-container').classList.toggle('light-mode');
 }
 
 function changeSnakeColor() {
