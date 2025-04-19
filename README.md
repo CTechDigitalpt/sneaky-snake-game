@@ -2,7 +2,7 @@
 
 Welcome to **Sneaky Snake**, a modern take on the classic Snake game! This project is built using HTML, CSS, and JavaScript, and includes exciting features to enhance your gaming experience.
 
-The game is called "Sneaky Snake" because of the snake's ability to slip through walls and appear on the opposite side – a sneaky maneuver that adds a strategic element to the classic gameplay. Unlike traditional snake games where walls mean instant death, this sneaky serpent can navigate the playing field with cunning movements that reward tactical thinking. I was intending on adding other features to make it a bit more exciting but we'll see if popularity and or any donations come my way to justify spending the time on adding more features to sneaky snake.
+The game is called "Sneaky Snake" because of the snake's ability to slip through walls and appear on the opposite side – a sneaky maneuver that adds a strategic element to the classic gameplay. Unlike traditional snake games where walls mean instant death, this sneaky serpent can navigate the playing field with cunning movements that reward tactical thinking. I was intending on adding other features to make it a bit more exciting but we'll see if popularity and or any donations come my way to justify spending the time on adding more features to sneaky snake, as many ideas are floating in my head, I've mentioned a few add-on feature ideas below.
 
 ## Current Features
 
@@ -15,7 +15,7 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Pause Functionality**: Pause and resume gameplay anytime.
 - **Dark Mode**: Toggle between light and dark themes for a personalized experience.
 - **Responsive Design**: Play the game on various devices with a responsive layout.
-- **Auto Pilot Mode**: Reach Milestone Scores to activate Auto-Pilot Snake.
+- **Auto Pilot Mode**: Reach Milestone Scores to activate Auto-Pilot Snake for 3 seconds.
 
 ## Possible Add-on Feature Ideas
 
