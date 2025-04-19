@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ccc;
+    background-color: #272626;
+    color: #fff;
     margin: 0;
     padding-top: 50px;
     display: flex;
@@ -12,9 +13,9 @@ body {
     padding-bottom: 40px; 
 }
 
-body.dark-mode {
-    background-color: #272626;
-    color: #fff;
+body.light-mode {
+    background-color: #ccc;
+    color: #000;
 }
 
 #game-container {
@@ -25,7 +26,7 @@ body.dark-mode {
     width: 80vh;
     margin-bottom: 50px;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #4a4747;
     border: 7px double #1ad138;
     border-radius: 25px;
     position: relative;
@@ -67,8 +68,8 @@ button:hover {
     background-color: #E64A19; /* Darker orange on hover */
 }
 
-#game-container.dark-mode {
-    background-color: #4a4747;
+#game-container.light-mode {
+    background-color: #f0f0f0;
 }
 
 #score-container {
@@ -91,7 +92,7 @@ button:hover {
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 255, 0.8); /* Blue for auto-pilot notifications */
     color: white;
     padding: 20px 30px;
     border-radius: 10px;
@@ -207,7 +208,7 @@ button:hover {
     margin-top: 0px;
 }
 
-#donate-btn-patreon {
+#donate-btn-kofi {
     background-color: #4CAF50;
     color: #fff;
     border: none;
@@ -218,7 +219,7 @@ button:hover {
     transition: background-color 0.3s;
 }
 
-#donate-btn-patreon:hover {
+#donate-btn-kofi:hover {
     background-color: #0a8a0e;
 }
 
@@ -236,6 +237,22 @@ button:hover {
 #donate-btn-paypal:hover {
     background-color: #0543b583;
 }
+
+#donate-btn-patreon {
+    background-color: #b55a05;
+    color: #fff;
+    border: none;
+    padding: 8px 8px 8px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#donate-btn-patreon:hover {
+    background-color: #c27c3bd8;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     #score-container {
