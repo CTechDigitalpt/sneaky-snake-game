@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneaky Snake Game</title>
-    <link rel="stylesheet" href="statics/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <link rel="icon" href="assets/images/icon/favicon.png" type="image/png">
 </head>
 <body>
@@ -34,6 +34,8 @@
         <div id="score">Score: 0</div>
         <div id="level">Level: 1</div>
     </div>
+
+    <div class="popup-message"></div>
 
     <div id="demo-popup">
         <img src="assets/images/demo/demo-image.webp" alt="Snake Demo">
@@ -74,10 +76,14 @@
         <div class="donate-container">
             <button id="donate-btn-paypal" onclick="window.open('https://www.paypal.com/donate/?hosted_button_id=FBG94CBRX3T5N', '_blank')">Donate at PayPal</button>
         </div>
+
+        <div class="donate-container">
+            <button id="donate-btn-kofi" onclick="window.open('https://ko-fi.com/ctechdigitalcom', '_blank')">Donate at Ko-FI</button>
+        </div>
     </footer>
 
-    <script src="statics/js/snakegame.js"></script>
-    <script src="statics/js/snake-demo.js"></script>
-    <script src="statics/js/high-scores.js"></script>
+    <script src="static/js/snakegame.js"></script>
+    <script src="static/js/snake-demo.js"></script>
+    <script src="static/js/high-scores.js"></script>
 </body>
 </html>
