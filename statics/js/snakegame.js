@@ -11,7 +11,7 @@ let autoPilotTimer = null;
 let countdownInterval = null;
 const autoPilotSpeed = 30;
 const autoPilotDuration = 3000; 
-const scoreMilestones = [50, 150, 300, 500, 750, 1000, 1750, 2500, 3750, 5000]; // Milestones
+const scoreMilestones = [50, 150, 300, 400, 500, 750, 1000, 1750, 2500, 3750, 5000]; // Milestones
 
 const gridSize = 10;
 const foodSize = 10;
