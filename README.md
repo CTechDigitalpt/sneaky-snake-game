@@ -26,7 +26,6 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 - **Customizable UI Settings**: Advanced settings panel allowing players to personalize visual aspects of the game including grid size, background patterns, animation effects, and UI element positioning to match their preferences and optimize their gaming experience.
 - **Power-ups**: Special items that appear randomly and provide temporary abilities like speed boost, invincibility, or score multipliers.
 - **Obstacles**: Random obstacles that appear in the game area, adding an extra challenge to navigation.
-- **Custom Level Creation**: Allow users to design and share their own levels.
 - **Mobile-Friendly Controls**: Add touch/swipe controls for mobile gameplay experience.
 - **Sound Effects and Music**: Add audio elements with volume control to enhance immersion.
 - **Achievement Rewards**: Implement challenges and rewards for completing specific goals.
@@ -40,7 +39,7 @@ The game is called "Sneaky Snake" because of the snake's ability to slip through
 3. Avoid colliding with the snake's own body.
 4. Pass through walls to appear on the opposite side of the screen a sneaky snake attack on your prey.
 5. Every 100 points, you'll advance to the next level.
-6. Game ends when the snake collides with itself.
+6. Game ends with snake collision.
 
 ## Controls
 
